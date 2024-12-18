@@ -31,7 +31,7 @@ body::before {
   background: #1c3034;
 
   /* background: #040404 url("../img/me.png") top right no-repeat; */
-  background: #004e92 url("../img/a10.jpg") top right no-repeat;
+  background: #1c3034 url("../img/a10.jpg") top right no-repeat;
 
   background-size: cover;
   left: 0;
@@ -39,6 +39,14 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
+
+/* 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+
+
+
 }
 
 @media (min-width: 1024px) {
@@ -46,6 +54,19 @@ body::before {
     background-attachment: fixed;
   }
 }
+
+
+@media (max-width: 768px) {
+  body::before {
+       
+        background: #1c3034 url("../img/a15.jpg") top right no-repeat  ;
+
+      
+      background-size: contain; /* Adjust if necessary */
+      background-position: center;
+  }
+}
+
 
 .hidden {
   display: none !important;
@@ -116,7 +137,7 @@ h6 {
   height: 100vh;
   display: flex;
   align-items: center;
-  z-index: 997;
+  z-index: 977;
   overflow-y: auto;
 }
 
