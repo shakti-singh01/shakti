@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Shakti Singh</title>
+  <meta content="Shakti Singh portfolio website" name="description">
+  <meta content="Shakti Singh gurjar personal portfolio" name="keywords">
+
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+  <nav id="navbar" class="navbar">
+    <div class="right-nav">
+      <ul class="nav-links" id="nav-links">
+        <li><a class="nav-link active" href="index.html" aria-current="page" class="active">Home</a></li>
+        <li><a class="nav-link" href="index.html">About</a></li>
+        <li><a class="nav-link" href="index.html">Resume</a></li>
+        <li><a class="nav-link" href="index.html">Gallery</a></li>
+        <li><a class="nav-link" href="project.html">Projects</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle" aria-label="Toggle navigation"></i>
+
+    </div>
+  </nav>
+
+  <!-- ##################################################### Gallery  -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <h2>project</h2>
+        <p>Some of the best project </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <!-- <li data-filter=".filter-award">Presented a paper</li> -->
+            <!-- <li data-filter=".filter-newspaper">Newspaper</li> -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container" style="position: relative; height: 4298px;">
+
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-award" style="position: absolute; left: 0px; top: 0px;">
+          <a href="https://shakti-singh01.github.io/Talk/" target="_blank">
+            <img src="assets/img/network.png" class="img-fluid" alt="project image" aria-label="project image">
+            <h2> MeetRoom Click to View </h2>
+
+          </a>
+        </div>
+
+
+        <!--         
+        <div class="col-lg-4 col-md-6 portfolio-item filter-award" style="position: absolute; left: 0px; top: 0px;">
+          <a href="https://www.w3schools.com/" target="_blank">
+            <img src="assets/img/gallery/1.jpg" class="img-fluid"
+              alt="project image"
+              aria-label="project image">
+          </a>
+        </div> -->
+
+
+
+        <!--         
+        <div class="col-lg-4 col-md-6 portfolio-item filter-award" style="position: absolute; left: 0px; top: 0px;">
+          <a href="https://www.w3schools.com/" target="_blank">
+            <img src="assets/img/gallery/1.jpg" class="img-fluid"
+              alt="Shakti Singh giving award to winner of google cloud study jams"
+              aria-label="Shakti Singh giving award to winner of google cloud study jams">
+          </a>
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    function sendMessage() {
+      if ($("#name").val() == '' || $("#email").val() == '' || $("#subject").val() == '' || $("#message").val() == '') {
+        return false;
+      }
+      window.open(`mailto:ShaktiSingh1a2b@gmail.com?&subject=${encodeURIComponent($('#subject').val())}&body=${encodeURIComponent($('#name').val() + '\n' + $('#message').val() + '\n\n' + $('#message').val())}`, '_blank')
+      return false;
+    }
+
+  </script>
+</body>
+
+</html>
